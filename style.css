@@ -114,6 +114,19 @@ body {
 .summary-visual {
     color: hsl(234, 85%, 45%);
 }
+
+.summary-score {
+    font-weight: 200;
+    color: hsla(0 , 10% , 10%, 0.4 );
+    padding: 1rem;
+}
+
+.summary-score span {
+    font-weight: 700;
+    color: hsl(0 , 40% , 10%);
+}
+
+
 @media (min-width: 600px) {
         body {
             min-height: 100vh;
