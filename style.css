@@ -26,6 +26,7 @@ body {
 .container {
     max-width: 46rem;
     display: grid;
+    border-radius: 2rem;
 
    
 }
@@ -34,9 +35,9 @@ body {
 .result {
     background: linear-gradient( hsla(252, 100%, 67%, 1),hsla(241, 81%, 54%, 1)  ) ;
     text-align: center;
-    color: hsl(0, 0%, 100%);
-    border-radius: 0 0 2rem 2rem ;
+    color: hsla(0, 0%, 100%, 0.5);
     padding: 2rem;
+    border-radius: 2rem ;
 }
 
 .grid-flow {
@@ -55,10 +56,47 @@ body {
     aspect-ratio: 1 / 1;
     margin-inline: auto;
 }
+.result-score span {
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.8;
+    color: #fff;
+}
+.result-rank {
+    font-size: 2rem;
+    color: #fff;
+}
+.summary {
+    padding: 2rem;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 1rem;
 
-
-
-
+}
+.flex-group {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    flex-wrap: wrap;
+}
+.reaction {
+    background: hsla(0, 100%, 67%, 0.2);
+}
+.memory {
+    background: hsla(39, 100%, 56%, 0.2);
+}
+.verbal {
+    background: hsla(166, 100%, 37%, 0.2);
+}
+.visual {
+    background: hsla(234, 85%, 45%, 0.2)
+    ;
+}
 
 @media (min-width: 600px) {
         body {
@@ -70,7 +108,8 @@ body {
             margin-inline: 1rem ;
             grid-template-columns: 1fr 1fr;
             overflow: hidden;
-            border-radius:  2rem;
             box-shadow: .5rem 1rem 3rem hsl(0, 10%, 10%, .1 );
         }
+    
+       
     }
